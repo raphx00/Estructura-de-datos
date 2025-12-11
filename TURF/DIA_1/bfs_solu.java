@@ -6,7 +6,6 @@ public class bfs_solu {
 
     // DFS -------------------------------------------------------------
 
-    // Función auxiliar recursiva
     private static void dfsUtil(int node,
                                 boolean[] visited,
                                 ArrayList<ArrayList<Integer>> adj,
@@ -21,7 +20,6 @@ public class bfs_solu {
         }
     }
 
-    // Devuelve el recorrido DFS desde el vértice 0
     public static ArrayList<Integer> dfsOfGraph(int V,
                      ArrayList<ArrayList<Integer>> adj) {
         ArrayList<Integer> result = new ArrayList<>();
@@ -33,7 +31,6 @@ public class bfs_solu {
 
     // BFS -------------------------------------------------------------
 
-    // Devuelve el recorrido BFS desde el vértice 0
     public static ArrayList<Integer> bfsOfGraph(int V,
                      ArrayList<ArrayList<Integer>> adj) {
         ArrayList<Integer> result = new ArrayList<>();
@@ -58,21 +55,7 @@ public class bfs_solu {
         return result;
     }
 
-    // MAIN (ejemplo de uso) -------------------------------------------
-    // Formato de entrada de ejemplo:
-    // V E
-    // E líneas con: u v (arista no dirigida)
-    //
-    // Ejemplo:
-    // 5 4
-    // 0 1
-    // 0 2
-    // 0 3
-    // 2 4
-    //
-    // Salida:
-    // DFS: 0 2 4 3 1
-    // BFS: 0 1 2 3 4  (dependerá del orden de inserción en la lista)
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
